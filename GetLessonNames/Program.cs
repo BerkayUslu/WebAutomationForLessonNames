@@ -43,7 +43,7 @@ namespace GetLessonNames
 
         private static void ScanSites(ChromeDriver driver)
         {
-            for (int i = 15190; i < 49570; i++)
+            for (int i = 15189; i <= 15210; i++)
             {
                 driver.Navigate().GoToUrl("https://online.yildiz.edu.tr/?transaction=LMS.EDU.LessonProgram.ViewOnlineLessonProgramForStudent/" + i);
                 driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromMilliseconds(500);
